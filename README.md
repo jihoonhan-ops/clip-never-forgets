@@ -78,15 +78,6 @@ If text prompts and image prototypes each work well alone, are they complementar
 
 **α = 0.5 beats both endpoints** (0.692 vs 0.642 / 0.611) → the two modalities carry complementary information. (α = 0 and α = 1 exactly recover the prototype and zero-shot numbers, sanity-checking the implementation.)
 
-## Reproduce
-
-The whole study runs end-to-end on a free Google Colab T4 in roughly 15 minutes.
-
-1. Open `clip_never_forgets.ipynb` in Colab (Runtime → T4 GPU).
-2. Runtime → Run all.
-
-The heavy step (CLIP embedding extraction) runs once and is cached; every downstream experiment then runs in seconds. All randomness is seeded, so the numbers above reproduce exactly.
-
 ## Key takeaways
 
 1. A frozen CLIP backbone does not forget — its representation is unchanged by construction, and class separability survives the full task sequence.
@@ -102,5 +93,5 @@ The heavy step (CLIP embedding extraction) runs once and is cached; every downst
 
 ## Related
 
-- Radford et al., *Learning Transferable Visual Models From Natural Language Supervision* (CLIP), 2021.
-- Park et al., *Pre-trained Vision and Language Transformers Are Few-Shot Incremental Learners* (PriViLege), CVPR 2024.
+- Radford et al., *Learning Transferable Visual Models From Natural Language Supervision*, 2021.
+- Park et al., *Pre-trained Vision and Language Transformers Are Few-Shot Incremental Learners*, CVPR 2024.
