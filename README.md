@@ -1,4 +1,4 @@
-# CLIP Never Forgets 🧊
+# CLIP Never Forgets
 
 **Frozen VLM features are a surprisingly strong class-incremental baseline — and forgetting comes from the classifier head, not the representation.**
 
