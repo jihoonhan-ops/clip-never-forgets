@@ -4,7 +4,9 @@
 
 A minimal, reproducible study of class-incremental learning (CIL) on CIFAR-100 with a **frozen CLIP ViT-B/32**. Three classifiers share the exact same backbone, so any difference in forgetting can be attributed to the classifier alone.
 
-> **Motivation :** Catastrophic forgetting — the tendency of a network to lose earlier knowledge when trained on new classes — is the central obstacle in class-incremental learning. Recent pre-training-based CIL methods (e.g. *PriViLege*, CVPR 2024) build on a simple observation: a frozen vision-language model already carries enough knowledge that incremental learning becomes far easier.
+## Motivation 
+
+Catastrophic forgetting — the tendency of a network to lose earlier knowledge when trained on new classes — is the central obstacle in class-incremental learning. Recent pre-training-based CIL methods (e.g. *PriViLege*, CVPR 2024) build on a simple observation: a frozen vision-language model already carries enough knowledge that incremental learning becomes far easier.
 
 This repo verifies the **most basic version of that premise directly**: with the CLIP backbone frozen, *where does forgetting actually come from* — the representation, or the classifier on top of it?
 
@@ -12,7 +14,7 @@ This repo verifies the **most basic version of that premise directly**: with the
 
 ## TL;DR
 
-— The frozen representation never forgets. What collapses under sequential training is the linear head, which develops a *recency bias* toward the most recently seen classes. A non-parametric prototype classifier over the same features forgets almost nothing.
+The frozen representation never forgets. What collapses under sequential training is the linear head, which develops a *recency bias* toward the most recently seen classes. A non-parametric prototype classifier over the same features forgets almost nothing.
 
 
 ## Setup
