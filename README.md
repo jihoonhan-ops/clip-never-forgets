@@ -16,6 +16,11 @@ This repo verifies the **most basic version of that premise directly**: with the
 
 The frozen representation never forgets. What collapses under sequential training is the linear head, which develops a *recency bias* toward the most recently seen classes. A non-parametric prototype classifier over the same features forgets almost nothing.
 
+## Setup
+
+All experiments are in [`clip_never_forgets.ipynb`](clip_never_forgets.ipynb) (Google Colab, T4 GPU).
+
+- **Dataset:** CIFAR-100, split into **10 tasks × 10 classes** ...
 
 ## Setup
 
