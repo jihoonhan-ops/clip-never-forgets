@@ -32,7 +32,7 @@ This repo verifies the **most basic version of that premise directly**: with the
 
 ![Main results](results.png)
 
-**1. The sequential linear probe collapses.** Final average accuracy drops to **0.117**, and Task-1 accuracy hits **0** after just three tasks (center panel). This is not a representation failure — see the diagnostic below.
+**1. The sequential linear probe collapses.** Final average accuracy drops to **0.118**, and Task-1 accuracy hits **0** after just three tasks (center panel). This is not a representation failure — see the diagnostic below.
 
 **2. The prototype classifier barely forgets.** With only 16 shots per class it keeps a final average accuracy of **0.611** and a forgetting measure of **0.096**. Its gentle decline tracks the zero-shot curve, reflecting the growing number of candidate classes rather than actual forgetting.
 
